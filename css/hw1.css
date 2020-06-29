@@ -113,3 +113,8 @@ tr{
 tr:hover{
     opacity:1;
 }
+
+#arrow{
+    list-style-type: none;
+
+}
