@@ -3,18 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ultimate Frisbee - History</title>
+	<script src="js/jsfile.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"></link>
 	<link rel="stylesheet" href="css/hw1.css">
 </head>
-<body>
+<body onload="load()">
 	<header>
 		<h1>Ulimate Frisbee History</h1>
 		<nav>
-			<a href="index.html" class = "active"> <i class="fas fa-home"></i> Home</a>
-			<a href="teams.html"><i class="fas fa-users"></i>Teams</a>
-			<a href="history.html"><i class="fas fa-landmark"></i>History</a>
-			<a href="http://www.usaultimate.org/index.html" target="_blank"><i class="fas fa-flag-usa"></i>USA Ultimate</a>
-
+			<button onclick= "home()"><i class="fas fa-home"></i> Home</button>
+			<button  onclick="teams()"><i class="fas fa-users"></i>Teams</button>
+			<button  onclick="history()"><i class="fas fa-landmark"></i>History</button>
+			<button><a href="http://www.usaultimate.org/index.html" target="_blank"><i class="fas fa-flag-usa"></i>USA Ultimate</a></button> 
 		</nav>
 	</header>
 		<main>
@@ -25,14 +25,92 @@
 
 
 			<a href="https://www.flickr.com/photos/paradisecoastie/15409853738/" title="Ultimate Frisbee"><img src="https://farm4.staticflickr.com/3948/15409853738_7dbfbfbac7_k.jpg"  alt="Ultimate Frisbee"></a>
-		</aside>
-			<section class = "right">
-				<h2>Watch your Head </h2>
+		   </aside>
+
+
+		<section id= "forHome">
+		    <h2>Watch your Head </h2>
 			<p>Ultimate Frisbee is a sport that I never played myself, but its popularity is something hard to ignore in many Midwestern college towns.  Students (and people who wish they were still students) spend the few briefs months of good weather, sprinting down fields, hurling frisbees, and yelling "Stack!!".</p>
 			<p>What I find much more entertaining is the large number of people who continue to play when the weather gets windy and the night sky darkens around oh....4:15pm.  The sight of frisbees boomeranging in the wind is topped only by the knowledge that even when you can't see them, those same plastic discs of death are probably hurtling through the dark night sky at 8 or 9 o'clock in the evening.
 			</p>
 			<p>Ultimate Frisbee requires a great deal of stamina and dexterity.  Not surprisingly, the <abbr title = "International Olympic Committee">IOC</abbr> officially recognized Ultimate as a sport in 2015.   It can go up against other sports for inclusion in  Olympic games.</p>
-	</section>
+		</section>
+		
+		<section id= "forHistory">
+         	<h2>Background</h2>
+			<p>Ultimate Frisbee/Ultimate has been around in some fashion since the 1960s.  Joel Silver is credited with introducing the game to his high school in 1968 after learning about the game at summer camp.  The game spread to more college campuses soon afterward.</p>
+			<p>The Ultimate Players Association was founded in 1979 and began organizing touraments across the country.  In 2010, UPA because the <a href = "https://www.usaultimate.org/index.html">USA Ultimate</a>.</p>
+			<p>Other than professional tournaments, games of Ultimate are typically played without referess.  Instead, players rely on "The Spirit of the Game" to encourage sportsmanship and self-officiating.</p>
+			<h2>Sources</h2>
+		
+			<ul id="arrow">
+				<li><a href = "https://en.wikipedia.org/wiki/Ultimate_(sport)"><i class="fas fa-arrow-circle-right"></i> Ultimate (sport)</a></li>
+				<li><a href = "http://www.wfdf.org/"><i class="fas fa-arrow-circle-right"></i> World Flying Disc Federation</a></li>
+			</ul>
+		 </section>
+		 
+
+		 <section id= "forTeams">
+			<h2>College Teams</h2>
+			<p>This is not meant to be a comprehensive list of all the teams, just a sampling from around the United States.  I focused on the ones that I though had cools names.</p>
+			<table>
+				<tr><th>Team Name</th>
+					<th>Location <i class="fas fa-location-arrow"></i></th>
+					<th>League Type</th></tr>
+				<tr>
+					<td>Afterburn - Air Force</td>
+					<td>Colorado</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Cold Front (Bates College)</td>
+					<td>Maine</td>
+					<td>Women's</td>
+				</tr>
+				<tr>
+					<td>Disco Inferno (Brown University)</td>
+					<td>Rhode Island</td>
+					<td>Women's</td>
+				</tr>
+				<tr>
+					<td>Bad Habit (Catholic University)</td>
+					<td>Washington DC</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Jive Turkeys (Dickinson College)</td>
+					<td>Pennsylvania</td>
+					<td>Both</td>
+				</tr>
+				<tr>
+					<td>Knights of the Round Disc(Longwood College)</td>
+					<td>Virginia</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Ninjas (University of Minnesota)</td>
+					<td>Minnesota</td>
+					<td>Women's</td>
+				</tr>
+				<tr>
+					<td>Flying Squirrels (Hendrix College)</td>
+					<td>Arizona</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Superfly (Yale)</td>
+					<td>Connecticut</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Flywheel (University of Michigan)</td>
+					<td>Michigan</td>
+					<td>Women's</td>
+				</tr>
+			</table>
+		</section>
+
+
 </main>
 </body>
 </html>

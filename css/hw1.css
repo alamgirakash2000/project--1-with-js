@@ -16,7 +16,7 @@ h1{
     text-transform: uppercase;
     font-size: x-large;
 }
-nav a{
+nav button{
     box-sizing: border-box;
     display:inline-block;
     border-radius: 10px;
@@ -30,18 +30,22 @@ nav a{
     transition: all .3s ease-in;
     
 }
-nav a:hover{
-    transform: scale(1.5);
+nav button:hover{
+    transform: scale(1.2);
+    background-color: #60d811f3;
+    color: #FFFFFF;
 }
-.active{
-    background-color: #ffffff;
-    color: rgba(18, 18, 112, 0.87)
+button > a{
+    text-decoration: none;
+    color:black;
 }
-main{
-    display: inline-block;
-    float: left;
+button>a:active{
+    background-color: yellowgreen;
+    color: red;
 }
 aside{
+    display: inline-block;
+    float: left;
     box-sizing: border-box;
     border: 1px solid greenyellow;
     display: inline-block;
@@ -65,12 +69,21 @@ aside{
     border-radius: 5%;
 }
 section{
-    display:inline-block;
+    display:none;
+}
+
+.open{
+    display: inline-block;
+    float: left;
     width: 70%;
-    padding-left: 2%;
+    padding: 2%;
     height: 100vh;
     font-size: 125%;
+
 }
+
+
+
 table{
     padding-left: 5%;
     width: 80%;
